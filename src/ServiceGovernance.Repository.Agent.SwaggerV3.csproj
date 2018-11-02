@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Toni Wenzel</Authors>
+    <Description>Service Repository Agent using Swagger to provide the Api Description. See details https://github.com/ServiceGovernance/ServiceGovernance.Repository</Description>
+    <Version>$(SemVer)</Version>
+    <PackageTags>service ServiceGovernance Governance servicerepository repository agent openapi swagger</PackageTags>
+    <PackageId>ServiceGovernance.Repository.Agent.SwaggerV3</PackageId>
+
+    <PackageIconUrl>https://github.com/ServiceGovernance/Home/raw/master/artwork/logos/logo_128.png</PackageIconUrl>
+    <PackageProjectUrl>https://github.com/ServiceGovernance/ServiceGovernance.Repository.Agent.SwaggerV3</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/ServiceGovernance/ServiceGovernance.Repository.Agent.SwaggerV3/blob/master/LICENSE</PackageLicenseUrl>
+
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <AllowedOutputExtensionsInPackageBuildOutputFolder>$(AllowedOutputExtensionsInPackageBuildOutputFolder);.pdb</AllowedOutputExtensionsInPackageBuildOutputFolder>
+
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.OpenApi.Readers" Version="1.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="3.0.0" />
+    <PackageReference Include="ServiceGovernance.Repository.Agent" Version="*" />
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0-beta-63127-02" PrivateAssets="All" />
+  </ItemGroup>
+
+</Project>
